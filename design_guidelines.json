@@ -1,0 +1,140 @@
+{
+  "project_name": "Girish Children Clinic",
+  "domain": "Healthcare / Pediatric Clinic",
+  "theme": "Light",
+  "archetype": "Archetype 3 (Pastel & Soft) mixed with medical trust",
+  "design_philosophy": {
+    "core_principles": [
+      "Friendly & Comforting: Use soft rounded corners (rounded-2xl, rounded-3xl) to avoid sharp, clinical edges.",
+      "Trust-First: Medical blues and clean whites to establish hygiene and professional authority.",
+      "Accessible & Action-Oriented: Prominent, high-contrast CTAs (Call, WhatsApp) especially for mobile."
+    ],
+    "emotion": "Warm, trusting, hygienic, professional, approachable, and comforting."
+  },
+  "typography": {
+    "fonts": {
+      "headings": "Nunito",
+      "body": "Figtree"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl lg:text-6xl tracking-tight font-extrabold text-slate-900",
+      "h2": "text-3xl md:text-4xl tracking-tight font-bold text-slate-800",
+      "h3": "text-xl md:text-2xl font-semibold text-slate-800",
+      "h4": "text-lg font-medium text-slate-700",
+      "body": "text-base leading-relaxed text-slate-600",
+      "small": "text-sm text-slate-500",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-sky-600"
+    }
+  },
+  "colors": {
+    "backgrounds": {
+      "page": "bg-slate-50",
+      "card": "bg-white",
+      "section_alt": "bg-sky-50",
+      "overlay": "bg-black/30"
+    },
+    "brand": {
+      "primary": "bg-sky-500 hover:bg-sky-600 text-white",
+      "secondary": "bg-emerald-500 hover:bg-emerald-600 text-white",
+      "accent": "bg-amber-400 hover:bg-amber-500 text-slate-900"
+    },
+    "text": {
+      "primary": "text-slate-900",
+      "secondary": "text-slate-600",
+      "muted": "text-slate-400",
+      "inverse": "text-white",
+      "brand": "text-sky-600"
+    },
+    "borders": {
+      "light": "border-slate-100",
+      "medium": "border-slate-200",
+      "brand": "border-sky-100"
+    }
+  },
+  "surfaces_and_micro_themes": {
+    "header": {
+      "style": "Glassmorphism",
+      "classes": "sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-slate-100 shadow-sm"
+    },
+    "cards": {
+      "style": "Neumorphic Tactile",
+      "classes": "bg-white rounded-3xl border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] overflow-hidden"
+    },
+    "mobile_sticky_bar": {
+      "style": "Solid High Contrast",
+      "classes": "fixed bottom-0 w-full z-50 bg-white border-t border-slate-200 p-4 shadow-[0_-4px_20px_rgb(0,0,0,0.05)] flex gap-4"
+    }
+  },
+  "layout_and_spacing": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_spacing": "py-20 md:py-32",
+    "grid_bento": {
+      "services": "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6 md:gap-8",
+      "trust_badges": "flex flex-wrap gap-4 items-center justify-center md:justify-start"
+    }
+  },
+  "components_strategy": {
+    "buttons": {
+      "primary": "inline-flex items-center justify-center rounded-full bg-sky-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-sky-500/30 transition-all hover:-translate-y-1 hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2",
+      "whatsapp": "inline-flex items-center justify-center rounded-full bg-emerald-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-500/30 transition-all hover:-translate-y-1 hover:bg-emerald-600",
+      "outline": "inline-flex items-center justify-center rounded-full border-2 border-slate-200 bg-transparent px-8 py-3.5 text-sm font-bold text-slate-700 transition-all hover:border-sky-500 hover:text-sky-600"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "usage": "Use rounded stroke icons. Avoid sharp or dense icons."
+    },
+    "forms": {
+      "inputs": "w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm focus:border-sky-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-sky-500/20 transition-all"
+    }
+  },
+  "media_and_images": [
+    {
+      "category": "hero",
+      "description": "Happy 5-year old child high-fiving the pediatrician.",
+      "url": "https://static.prod-images.emergentagent.com/jobs/a70baf13-7455-4258-8f13-c9d040709667/images/eddbf463aa839c0220c02728cb7228d20d208de9ab86a26c8b952b3e09255a09.png"
+    },
+    {
+      "category": "about_doctor",
+      "description": "Professional portrait of Dr. Girish.",
+      "url": "https://static.prod-images.emergentagent.com/jobs/a70baf13-7455-4258-8f13-c9d040709667/images/ba0289240c92039839a0b642ef4f647392ce311c4990cb7462fd023f141d5019.png"
+    },
+    {
+      "category": "service_newborn",
+      "description": "Beautiful sleeping newborn baby.",
+      "url": "https://static.prod-images.emergentagent.com/jobs/a70baf13-7455-4258-8f13-c9d040709667/images/f61932b8f19dade5357a69c533d0e90de66a920f6a6403af2ff28154cca5cbe9.png"
+    },
+    {
+      "category": "service_general",
+      "description": "Pediatric stethoscope on a clean desk.",
+      "url": "https://static.prod-images.emergentagent.com/jobs/a70baf13-7455-4258-8f13-c9d040709667/images/cc9a151efeaa15683a2ceedaa643bbe2d4c60411a7d5c2d204bb215bc1ef4269.png"
+    },
+    {
+      "category": "clinic_environment_1",
+      "description": "Clean and bright waiting room 1.",
+      "url": "https://images.pexels.com/photos/8459996/pexels-photo-8459996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    {
+      "category": "clinic_environment_2",
+      "description": "Modern waiting area 2.",
+      "url": "https://images.unsplash.com/photo-1762625570087-6d98fca29531?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBjbGluaWMlMjB3YWl0aW5nJTIwcm9vbXxlbnwwfHx8fDE3Nzc3MzAwMjV8MA&ixlib=rb-4.1.0&q=85"
+    }
+  ],
+  "sections_and_content_strategy": {
+    "Header": "Must include Clinic Logo (Text 'Girish Children Clinic' with a heart/stethoscope icon is fine), Nav links, and 'Book Appointment' Button.",
+    "Hero": "Two-column layout on desktop. Left: H1 'Trusted Care for Your Little Ones', Subtitle, Call/WhatsApp CTAs. Right: 'pediatric_hero' image with a subtle floating badge '4.7★ Google Rating'.",
+    "Why_Parents_Trust_Us": "3-column grid featuring icons: 9+ Years Experience, KMC Registered, Highly Recommended.",
+    "Services": "Bento Grid layout (Tetris style). Mix large cards with images ('service_newborn', 'service_general') and smaller cards with just icons/text for Vaccination, Fever, Allergy, etc.",
+    "About_Doctor": "Side-by-side layout. Image of Dr. Girish ('about_doctor') on left. Right side: Bio, qualifications (MBBS, Rajiv Gandhi University), and patient approach.",
+    "Clinic_Environment": "Masonry or CSS Grid photo gallery of the clinic using 'clinic_environment_1' and 'clinic_environment_2'. Add some hover zoom effects.",
+    "Testimonials": "3 cards in a row. Use soft pastel backgrounds (bg-sky-50, bg-amber-50, bg-emerald-50) for the cards. Include 5-star icons.",
+    "Timings_and_Contact": "Split section. Left: Contact Info + Clinic Timings. Right: Appointment Inquiry Form with Shadcn inputs. Below: Google Maps embed.",
+    "Mobile_Sticky_Bar": "A fixed bar at the bottom ONLY visible on mobile (md:hidden) containing a 'Call Now' and 'WhatsApp' button side-by-side."
+  },
+  "motion_and_interaction": {
+    "hover_states": "Buttons must lift slightly (-translate-y-1) and increase shadow. Cards should have a subtle scale effect or border color change on hover.",
+    "scroll_animations": "Use framer-motion for smooth staggered fade-ins (initial opacity 0, y 20 -> animate opacity 1, y 0) for bento grid items and text blocks."
+  },
+  "testing_attributes": {
+    "instructions": "All interactive elements (buttons, links, form inputs) MUST include data-testid. Example: data-testid='hero-whatsapp-button'."
+  }
+}
