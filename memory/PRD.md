@@ -29,6 +29,12 @@ Create a modern, responsive landing page for **Girish Children Clinic** — a pe
   - MongoDB collection: `appointments` (id UUID, created_at ISO string, _id excluded from responses)
 
 ## What's Been Implemented (2025-12)
+### Update 2 (2025-12)
+- Swapped placeholder clinic photos for the real Girish Children Clinic photo collage (signboard + consultation room + waiting area + certificate wall) across About Doctor and Clinic Environment sections
+- Updated qualifications site-wide from "MBBS – Pediatric Specialist" to **MBBS, MD (Pediatrics)** (per real signboard) and added KMC Reg. No. 6281 in the About section highlights
+- Declined external SMS/WhatsApp notifications for now; submissions continue to persist in the `appointments` Mongo collection and are retrievable via GET /api/appointments
+
+### Update 1 (2025-12)
 - Full responsive landing page with 9 sections + sticky mobile Call/WhatsApp bar
 - Hero with 4.7★ & 9+ years floating badges, dual CTAs
 - Trust strip (4 cards): experience, KMC registered, rating, vaccinations
