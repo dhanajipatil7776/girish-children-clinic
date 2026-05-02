@@ -28,9 +28,9 @@ export default function Hero() {
             </h1>
 
             <p className="mt-5 text-base md:text-lg text-slate-600 max-w-xl leading-relaxed">
-              <span className="font-semibold text-slate-800">{CLINIC.doctor}</span>, MBBS — {CLINIC.experienceYears}+ years caring for
-              children in Andrahalli. Morning &amp; evening consultations. Vaccinations,
-              fever care, newborn checkups &amp; growth monitoring.
+              <span className="font-semibold text-slate-800">{CLINIC.doctor}</span>, MBBS, MD (Pediatrics) — {CLINIC.experienceYears}+ years
+              caring for children in Andrahalli. Morning &amp; evening consultations.
+              Vaccinations, fever care, newborn checkups &amp; growth monitoring.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">

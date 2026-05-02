@@ -2,7 +2,7 @@
 export const CLINIC = {
   name: "Girish Children Clinic",
   doctor: "Dr. K. L. Girish",
-  tagline: "Pediatric Specialist — Trusted Child Healthcare in Andrahalli",
+  tagline: "MBBS, MD (Pediatrics) — Trusted Child Healthcare in Andrahalli",
   phoneDisplay: "+91 91104 59170",
   phoneTel: "+919110459170",
   whatsapp: "https://wa.me/919110459170",

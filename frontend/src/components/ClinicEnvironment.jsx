@@ -1,29 +1,8 @@
 import React from "react";
-import { Camera } from "lucide-react";
+import { Camera, Building2, Award } from "lucide-react";
 
-const IMG_1 =
-  "https://images.pexels.com/photos/8459996/pexels-photo-8459996.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
-const IMG_2 =
-  "https://images.unsplash.com/photo-1762625570087-6d98fca29531?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBjbGluaWMlMjB3YWl0aW5nJTIwcm9vbXxlbnwwfHx8fDE3Nzc3MzAwMjV8MA&ixlib=rb-4.1.0&q=85";
-const IMG_3 =
-  "https://static.prod-images.emergentagent.com/jobs/a70baf13-7455-4258-8f13-c9d040709667/images/cc9a151efeaa15683a2ceedaa643bbe2d4c60411a7d5c2d204bb215bc1ef4269.png";
-
-const Tile = ({ src, label, testId, className = "" }) => (
-  <figure
-    data-testid={testId}
-    className={`group relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] ${className}`}
-  >
-    <img
-      src={src}
-      alt={label}
-      loading="lazy"
-      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-    />
-    <figcaption className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 via-black/20 to-transparent text-white text-sm font-medium">
-      {label}
-    </figcaption>
-  </figure>
-);
+const CLINIC_COLLAGE =
+  "https://customer-assets.emergentagent.com/job_dr-girish-pediatric/artifacts/wthx00nb_Dr.Girish.png";
 
 export default function ClinicEnvironment() {
   return (
@@ -42,40 +21,65 @@ export default function ClinicEnvironment() {
               A clean, calm space — made for little ones.
             </h2>
             <p className="mt-3 text-slate-600">
-              Hygienic consultation rooms, a comfortable waiting area and a child-friendly
-              atmosphere that helps every visit feel reassuring.
+              Step inside Girish Children Clinic: a bright consultation room,
+              comfortable waiting area, and a certificate wall that reflects years
+              of trusted pediatric care.
             </p>
           </div>
           <div className="inline-flex items-center gap-2 text-xs text-slate-500">
             <Camera className="w-4 h-4" />
-            Real photos will be shared by the clinic soon
+            Real photos from our clinic
           </div>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-6 gap-5 auto-rows-[200px] md:auto-rows-[220px]">
-          <Tile
-            src={IMG_1}
-            label="Comfortable waiting area"
-            testId="env-tile-1"
-            className="md:col-span-4 md:row-span-2"
-          />
-          <Tile
-            src={IMG_2}
-            label="Modern, hygienic interiors"
-            testId="env-tile-2"
-            className="md:col-span-2"
-          />
-          <Tile
-            src={IMG_3}
-            label="Well-equipped consultation room"
-            testId="env-tile-3"
-            className="md:col-span-2"
-          />
-        </div>
+        <div className="mt-10 grid grid-cols-1 lg:grid-cols-12 gap-5">
+          {/* Main collage tile */}
+          <figure
+            data-testid="env-main-collage"
+            className="relative lg:col-span-8 group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-[0_20px_50px_-15px_rgba(2,132,199,0.18)]"
+          >
+            <img
+              src={CLINIC_COLLAGE}
+              alt="Girish Children Clinic — signboard, consultation room, waiting area and certificate wall"
+              loading="lazy"
+              className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+            />
+          </figure>
 
-        <p className="mt-6 text-xs text-slate-400 italic">
-          Note: Photographs shown are representative. Actual clinic photos will be updated shortly.
-        </p>
+          {/* Side highlights */}
+          <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5">
+            <div
+              data-testid="env-highlight-interior"
+              className="rounded-3xl bg-white border border-slate-100 p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+            >
+              <div className="w-11 h-11 rounded-2xl bg-sky-500 text-white inline-flex items-center justify-center shadow-md shadow-sky-500/30">
+                <Building2 className="w-5 h-5" strokeWidth={2.2} />
+              </div>
+              <div className="font-heading font-extrabold text-lg mt-4 text-slate-900">
+                Hygienic &amp; child-friendly interiors
+              </div>
+              <p className="text-sm text-slate-600 mt-2 leading-relaxed">
+                Freshly-maintained consultation room and a comfortable waiting
+                area so every visit feels calm and reassuring.
+              </p>
+            </div>
+            <div
+              data-testid="env-highlight-certs"
+              className="rounded-3xl bg-white border border-slate-100 p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
+            >
+              <div className="w-11 h-11 rounded-2xl bg-amber-500 text-white inline-flex items-center justify-center shadow-md shadow-amber-500/30">
+                <Award className="w-5 h-5" strokeWidth={2.2} />
+              </div>
+              <div className="font-heading font-extrabold text-lg mt-4 text-slate-900">
+                Credentials you can trust
+              </div>
+              <p className="text-sm text-slate-600 mt-2 leading-relaxed">
+                Karnataka Medical Council registration &amp; Rajiv Gandhi University
+                of Health Sciences credentials — proudly on display.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ export default function Footer() {
               <div className="font-heading font-extrabold text-white text-lg">{CLINIC.name}</div>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-slate-400 max-w-sm">
-              {CLINIC.doctor} — MBBS, Pediatric Specialist.
+              {CLINIC.doctor} — MBBS, MD (Pediatrics).
               Trusted child healthcare in Andrahalli, Bengaluru.
               Vaccinations, fever care, growth monitoring &amp; more.
             </p>

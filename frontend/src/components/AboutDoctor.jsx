@@ -2,13 +2,14 @@ import React from "react";
 import { CheckCircle2, GraduationCap, Award, HeartHandshake } from "lucide-react";
 import { CLINIC } from "../lib/clinic";
 
+// Use the real clinic photo collage (shows signboard with Dr. K. L. Girish's credentials).
 const DOC_IMG =
-  "https://static.prod-images.emergentagent.com/jobs/a70baf13-7455-4258-8f13-c9d040709667/images/ba0289240c92039839a0b642ef4f647392ce311c4990cb7462fd023f141d5019.png";
+  "https://customer-assets.emergentagent.com/job_dr-girish-pediatric/artifacts/wthx00nb_Dr.Girish.png";
 
 export default function AboutDoctor() {
   const highlights = [
-    { icon: GraduationCap, text: "MBBS — Pediatric Specialist" },
-    { icon: Award, text: "Registered with Karnataka Medical Council" },
+    { icon: GraduationCap, text: "MBBS, MD (Pediatrics)" },
+    { icon: Award, text: "Karnataka Medical Council — Reg. No. 6281" },
     { icon: CheckCircle2, text: "Rajiv Gandhi University of Health Sciences trained" },
     { icon: HeartHandshake, text: `${CLINIC.experienceYears}+ years of pediatric clinical experience` },
   ];
@@ -27,8 +28,9 @@ export default function AboutDoctor() {
               <div className="relative rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl bg-white">
                 <img
                   src={DOC_IMG}
-                  alt={CLINIC.doctor}
-                  className="w-full h-[420px] sm:h-[500px] object-cover"
+                  alt={`${CLINIC.doctor} — clinic signboard and credentials`}
+                  className="w-full h-[420px] sm:h-[500px] object-cover object-left-top"
+                  style={{ objectPosition: "left top" }}
                   loading="lazy"
                 />
               </div>
